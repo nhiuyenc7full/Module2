@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
-    <StartupObject>ConsoleApp1._31</StartupObject>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <StartupObject>OOP.TestShape</StartupObject>
   </PropertyGroup>
 
 </Project>

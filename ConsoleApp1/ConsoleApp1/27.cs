@@ -8,24 +8,15 @@ namespace ConsoleApp1
     {
         static void Main()
         {
-            string line = "Display the pattern like pyramid using the alphabet.";
-            Console.WriteLine("\nOriginal String: " + line);
-            string result = "";
-            List<string> wordsList = new List<string>();
-            string[] words = line.Split(new[] {" "}, StringSplitOptions.None);
-            for (int i = words.Length - 1; i >= 0; i--)
+            Console.WriteLine("Enter the number (integer): ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            var sum = 0;
+            while (number != 0)
             {
-                result += words[i] + " ";
+                sum += number % 10;
+                number /= 10;
             }
-            wordsList.Add(result);
-            foreach (String s in wordsList)
-            {
-                
-
-                Console.WriteLine("\nReverse String: " + s);
-            }
+            Console.WriteLine("Sum is: " + sum);
         }
-
-    
     }
 }
