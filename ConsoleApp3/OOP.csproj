@@ -3,7 +3,21 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <StartupObject>OOP.TestShape</StartupObject>
+    <StartupObject>OOP.Vehicles.TestVehicles</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="House\SmartApartment.cs" />
+    <Compile Remove="Menu.cs" />
+    <Compile Remove="Person.cs" />
+    <Compile Remove="PhotoAlbum.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="House\SmartApartment.cs" />
+    <None Include="Menu.cs" />
+    <None Include="Person.cs" />
+    <None Include="PhotoAlbum.cs" />
+  </ItemGroup>
 
 </Project>
