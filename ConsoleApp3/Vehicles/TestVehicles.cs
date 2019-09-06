@@ -83,7 +83,7 @@ namespace OOP.Vehicles
             Console.WriteLine();
 
             Bike bike;
-            for (var i = 0; i < amount; i++)
+            for (var i = 0; i < n; i++)
             {
                 Console.Write($"Tao xe thu {i + 1}: ");
                 bike = new Bike();
