@@ -6,59 +6,56 @@ namespace OOP.Vehicles
 {
     class TestVehicles
     {
-        public static int amount = 0;
+        public static uint amount = 0;
         public static List<Bike> bikeList = new List<Bike>();
         public static List<Car> carList = new List<Car>();
+        public static uint n;
         public static void Main()
         {
-            menu:  Menu();
-            string str = Console.ReadLine();
-            int choose;
-            while (!Int32.TryParse(str, out choose))
-            {
-                Console.WriteLine("Chon 1, 2, 3, 4 hoac 5: ");
-                str = Console.ReadLine();
-            }
-
+            Menu();
+            
             Bike bike;
             Car car;
-            do {
-                
+        }
+        static void process(int choose)
+        {
                 switch(choose)
                 {
                     case 1:
                         {
                             number1();
                         }
-                        goto menu;
+                        break;
                     case 2:
                         {
                             number2();
                         }
-                        goto menu;
+                        break;
                     case 3:
                         {
                             number3();
                         }
-                        goto menu;
+                        break;
 
                     case 4:
                         {
                             number4();
                         }
-                        goto menu;
+                        break;
                     case 5:
+                        Console.WriteLine("Thoat chuong trinh. ");
+                        Environment.Exit(Environment.ExitCode);
                         break;
                     default:
                         Console.WriteLine("Chon 1, 2, 3, 4 hoac 5: ");
-                        goto menu;
+                        Menu();
+                        break;
                 }
-            } while (choose != 5);
-
-
+            Menu();
         }
         private static void Menu()
         {
+            Console.WriteLine();
             Console.WriteLine("**********************************");
             Console.WriteLine("MENU");
             Console.WriteLine("1. Nhap so xe dap");
@@ -67,13 +64,20 @@ namespace OOP.Vehicles
             Console.WriteLine("4. Hien thi xe o to");
             Console.WriteLine("5. Thoat chuong trinh");
             Console.WriteLine("**********************************");
+            string str = Console.ReadLine();
+            int choose;
+            while (!Int32.TryParse(str, out choose))
+            {
+                Console.WriteLine("Phai chon 1, 2, 3, 4 hoac 5: ");
+                str = Console.ReadLine();
+            }
+            process(choose);
         }
         private static void number1()
         {
             Console.Write("Nhap so luong xe: ");
             string str = Console.ReadLine();
-            int n;
-            while (!Int32.TryParse(str, out n))
+            while (!uint.TryParse(str, out n))
             {
                 Console.WriteLine("Nhap lai so luong xe: ");
                 str = Console.ReadLine();
@@ -93,7 +97,7 @@ namespace OOP.Vehicles
                 bike.Model = Console.ReadLine();
                 Console.Write("Nhap Year: ");
                 str = Console.ReadLine();
-                while (!Int32.TryParse(str, out n))
+                while (!uint.TryParse(str, out n))
                 {
                     Console.WriteLine("Nhap lai Year: ");
                     str = Console.ReadLine();
@@ -105,19 +109,26 @@ namespace OOP.Vehicles
 
         private static void number2()
         {
-            Console.WriteLine("Xe dap da nhap: ");
-            foreach (var n in bikeList)
+            if (amount == 0)
             {
-                n.ToString();
+                Console.WriteLine("Chua co xe nao.");
+            } 
+            else
+            {
+                Console.WriteLine("Xe dap da nhap: ");
+                foreach (var n in bikeList)
+                {
+                    n.ToString();
+                }
             }
+            
         }
 
         private static void number3()
         {
             Console.Write("Nhap so luong xe: ");
             string str = Console.ReadLine();
-            int n;
-            while (!Int32.TryParse(str, out n))
+            while (!uint.TryParse(str, out n))
             {
                 Console.WriteLine("Nhap lai so luong xe: ");
                 str = Console.ReadLine();
@@ -137,7 +148,7 @@ namespace OOP.Vehicles
                 car.Model = Console.ReadLine();
                 Console.Write("Nhap Year: ");
                 str = Console.ReadLine();
-                while (!Int32.TryParse(str, out n))
+                while (!uint.TryParse(str, out n))
                 {
                     Console.WriteLine("Nhap lai Year: ");
                     str = Console.ReadLine();
@@ -149,7 +160,7 @@ namespace OOP.Vehicles
 
                 Console.Write("Nhap Speed: ");
                 str = Console.ReadLine();
-                while (!Int32.TryParse(str, out n))
+                while (!uint.TryParse(str, out n))
                 {
                     Console.WriteLine("Nhap lai Speed: ");
                     str = Console.ReadLine();
@@ -160,11 +171,19 @@ namespace OOP.Vehicles
         }
         private static void number4()
         {
-            Console.WriteLine("Xe o to da nhap: ");
-            foreach (var n in carList)
+            if (amount == 0)
             {
-                n.ToString();
+                Console.WriteLine("Chua co xe nao: ");
             }
+            else
+            {
+                Console.WriteLine("Xe o to da nhap: ");
+                foreach (var n in carList)
+                {
+                    n.ToString();
+                }
+            }
+            
         }
     }
 }

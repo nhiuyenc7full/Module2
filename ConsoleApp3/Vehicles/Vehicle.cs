@@ -8,11 +8,11 @@ namespace OOP.Vehicles
     {
         private string make;
         private string model;
-        private int year;
+        private uint year;
 
         public string Make { get => make; set => make = value; }
         public string Model { get => model; set => model = value; }
-        public int Year { get => year; set => year = value; }
+        public uint Year { get => year; set => year = value; }
 
         public Vehicle()
         {
@@ -20,7 +20,7 @@ namespace OOP.Vehicles
             model = "BMW19";
             year = 2019;
         }
-        public Vehicle(string ma, string mo, int ye)
+        public Vehicle(string ma, string mo, uint ye)
         {
             make = ma;
             model = mo;

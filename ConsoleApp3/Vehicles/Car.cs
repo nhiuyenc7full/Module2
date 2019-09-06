@@ -7,7 +7,7 @@ namespace OOP.Vehicles
     class Car : Vehicle
     {
         private string type;
-        private int speed;
+        private uint speed;
 
         private string idCar = "CAR";
         private static int count = 0;
@@ -20,7 +20,7 @@ namespace OOP.Vehicles
         }
 
         public string Type { get => type; set => type = value; }
-        public int Speed { get => speed; set => speed = value; }
+        public uint Speed { get => speed; set => speed = value; }
 
         public override void ToString()
         {
