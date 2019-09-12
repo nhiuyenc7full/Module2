@@ -17,29 +17,29 @@ namespace OOP.Vehicles
             Bike bike;
             Car car;
         }
-        static void process(int choose)
+        static void Process(int choose)
         {
                 switch(choose)
                 {
                     case 1:
                         {
-                            number1();
+                        InputBikeAmount();
                         }
                         break;
                     case 2:
                         {
-                            number2();
+                            ShowBike();
                         }
                         break;
                     case 3:
                         {
-                            number3();
+                        InputCarAmount();
                         }
                         break;
 
                     case 4:
                         {
-                            number4();
+                            ShowCar();
                         }
                         break;
                     case 5:
@@ -71,9 +71,9 @@ namespace OOP.Vehicles
                 Console.WriteLine("Phai chon 1, 2, 3, 4 hoac 5: ");
                 str = Console.ReadLine();
             }
-            process(choose);
+            Process(choose);
         }
-        private static void number1()
+        private static void InputBikeAmount()
         {
             Console.Write("Nhap so luong xe: ");
             string str = Console.ReadLine();
@@ -87,7 +87,7 @@ namespace OOP.Vehicles
             Console.WriteLine();
 
             Bike bike;
-            for (var i = 0; i < n; i++)
+            for (var i = 0; i < amount; i++)
             {
                 Console.Write($"Tao xe thu {i + 1}: ");
                 bike = new Bike();
@@ -107,7 +107,7 @@ namespace OOP.Vehicles
             }
         }
 
-        private static void number2()
+        private static void ShowBike()
         {
             if (amount == 0)
             {
@@ -124,7 +124,7 @@ namespace OOP.Vehicles
             
         }
 
-        private static void number3()
+        private static void InputCarAmount()
         {
             Console.Write("Nhap so luong xe: ");
             string str = Console.ReadLine();
@@ -169,7 +169,7 @@ namespace OOP.Vehicles
                 carList.Add(car);
             }
         }
-        private static void number4()
+        private static void ShowCar()
         {
             if (amount == 0)
             {

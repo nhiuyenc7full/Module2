@@ -8,15 +8,20 @@ namespace OOP.Vehicles
     {
         private string type;
         private uint speed;
+        private string wheel;
 
         private string idCar = "CAR";
         private static int count = 0;
-        private string id;
+        private string iD;
 
-        public Car()
+        public Car() 
         {
             count++;
-            id = idCar + count;
+            iD = idCar + count;
+        }
+        public Car(string wheel) : base()
+        {
+            wheel = wheel;
         }
 
         public string Type { get => type; set => type = value; }
@@ -24,7 +29,7 @@ namespace OOP.Vehicles
 
         public override void ToString()
         {
-            Console.WriteLine("Xe thuoc hang: " + Make + ", doi: " + Model + ", nam: " + Year + ", loai: " + Type + ", toc do: " + Speed + ", id xe: " + id);
+            Console.WriteLine("Xe thuoc hang: " + Make + ", doi: " + Model + ", nam: " + Year + ", loai: " + Type + ", toc do: " + Speed + ", id xe: " + iD);
         }
     }
 }

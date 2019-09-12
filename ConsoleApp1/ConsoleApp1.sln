@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{AF2A0C9A-8709-42FD-A3E8-7EEAC943CBF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "..\ConsoleApp3\OOP.csproj", "{AEFDFC58-2C72-48EF-8155-7BD19FB2041F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP", "..\ConsoleApp3\OOP.csproj", "{AEFDFC58-2C72-48EF-8155-7BD19FB2041F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
