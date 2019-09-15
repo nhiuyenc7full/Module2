@@ -1,0 +1,11 @@
+D:\C7\Module2\OOP2\OOP2\ExerciseFileIO\bin\Debug\netcoreapp2.2\ExerciseFileIO.deps.json
+D:\C7\Module2\OOP2\OOP2\ExerciseFileIO\bin\Debug\netcoreapp2.2\ExerciseFileIO.runtimeconfig.json
+D:\C7\Module2\OOP2\OOP2\ExerciseFileIO\bin\Debug\netcoreapp2.2\ExerciseFileIO.runtimeconfig.dev.json
+D:\C7\Module2\OOP2\OOP2\ExerciseFileIO\bin\Debug\netcoreapp2.2\ExerciseFileIO.dll
+D:\C7\Module2\OOP2\OOP2\ExerciseFileIO\bin\Debug\netcoreapp2.2\ExerciseFileIO.pdb
+D:\C7\Module2\OOP2\OOP2\ExerciseFileIO\obj\Debug\netcoreapp2.2\ExerciseFileIO.csproj.CoreCompileInputs.cache
+D:\C7\Module2\OOP2\OOP2\ExerciseFileIO\obj\Debug\netcoreapp2.2\ExerciseFileIO.AssemblyInfoInputs.cache
+D:\C7\Module2\OOP2\OOP2\ExerciseFileIO\obj\Debug\netcoreapp2.2\ExerciseFileIO.AssemblyInfo.cs
+D:\C7\Module2\OOP2\OOP2\ExerciseFileIO\obj\Debug\netcoreapp2.2\ExerciseFileIO.dll
+D:\C7\Module2\OOP2\OOP2\ExerciseFileIO\obj\Debug\netcoreapp2.2\ExerciseFileIO.pdb
+D:\C7\Module2\OOP2\OOP2\ExerciseFileIO\obj\Debug\netcoreapp2.2\ExerciseFileIO.csprojAssemblyReference.cache

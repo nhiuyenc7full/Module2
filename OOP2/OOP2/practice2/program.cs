@@ -10,31 +10,34 @@ namespace practice2_1
         private static Product product;
         static void Main(string[] args)
         {
-            Menu();
+            DisplayMenu();
         }
-        static void Menu()
+        static void DisplayMenu()
         {
-            Console.WriteLine("***********************************");
-            Console.WriteLine("PRODUCT MANAGEMENT SYSTEM:");
-            Console.WriteLine("1. Add new product");
-            Console.WriteLine("2. Remove product");
-            Console.WriteLine("3. Iterate product list");
-            Console.WriteLine("4. Search product");
-            Console.WriteLine("5. Exit");
-            Console.WriteLine("\n***********************************");
+            Console.WriteLine();
+            Console.WriteLine("\t\t************************************");
+            Console.WriteLine("\t\t*    PRODUCT MANAGEMENT SYSTEM:    *");
+            Console.WriteLine("\t\t*     1. Add new product           *");
+            Console.WriteLine("\t\t*     2. Remove product            *");
+            Console.WriteLine("\t\t*     3. Iterate product list      *");
+            Console.WriteLine("\t\t*     4. Search product            *");
+            Console.WriteLine("\t\t*     5. Export file               *");
+            Console.WriteLine("\t\t*     6. Exit                      *");
+            Console.WriteLine("\t\t************************************\n");
 
             int choose;
             string str = Console.ReadLine();
-            while(!int.TryParse(str, out choose))
+            while(!int.TryParse(str, out choose) || choose < 1 || choose > 6)
             {
                 Console.Write("Enter again! ");
                 str = Console.ReadLine();
             }
-            Process(choose);
+            ChooseMenu(choose);
         }
-        static void Process(int choose)
+        static void ChooseMenu(int choose)
         {
             shop = new Shop();
+            Console.Clear();
             switch (choose)
             {
                 case 1:
@@ -57,7 +60,7 @@ namespace practice2_1
                         }
 
                         product = new Product(_name, _description, _price);
-                        Console.Write("\nThe information of product added: ");
+                        Console.Write("\nThe information of product was added: ");
                         product.ViewInfor();
 
                         shop.AddProduct(product);
@@ -100,15 +103,16 @@ namespace practice2_1
                     }
                     break;
                 case 5:
+                    shop.ExportFile();
+                    Console.WriteLine("File was exported.");
+                    break;
+                case 6:
                     Console.WriteLine("Exit.");
                     Environment.Exit(Environment.ExitCode);
                     break;
-                default:
-                    Console.WriteLine("Enter 1, 2, 3, 4 or 5: ");
-                    Menu();
-                    break;
+
             }
-            Menu();
+            DisplayMenu();
         }
     }
 }

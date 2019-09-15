@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace practice2_1
@@ -38,7 +39,7 @@ namespace practice2_1
             
             foreach (var item in productList)
             {
-                item.ViewInfor();
+                Console.WriteLine(item.ViewInfor());
             }
         }
         public void SearchProduct(int price1, int price2)
@@ -62,6 +63,18 @@ namespace practice2_1
                     item.ViewInfor();
                 }
             }
+        }
+        public void ExportFile()
+        {
+            foreach (var item in productList)
+            {
+                string path = item.Name + ".txt";
+                using(StreamWriter file = new StreamWriter(path))
+                {
+                    file.WriteLine(item.ViewInfor());
+                }
+            }
+            
         }
     }
 }

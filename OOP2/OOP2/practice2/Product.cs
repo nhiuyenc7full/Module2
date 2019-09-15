@@ -12,8 +12,12 @@ namespace practice2_1
         public string Name { get => _name; set => _name = value; }
         public string Decription { get => _decription; set => _decription = value; }
         public double Price { get => _price; set => _price = value; }
-        public int[] Rate { get => _rate; set => _rate = value; }
-        
+
+        public Product()
+        {
+            _name = string.Empty;
+            _decription = string.Empty;
+        }
 
         public Product(string name, string description, double price)
         {
@@ -21,9 +25,10 @@ namespace practice2_1
             _decription = description;
             _price = price;
         }
-        public void ViewInfor()
+
+        public string ViewInfor()
         {
-            Console.WriteLine("Name: {0}; price: {1}; decription: {2}", _name, _price, _decription);
+            return $"Name: {_name}; price: {_price}; decription: {_decription}";
         }
     }
 }

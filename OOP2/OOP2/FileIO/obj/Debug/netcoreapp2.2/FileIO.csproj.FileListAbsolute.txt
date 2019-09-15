@@ -1,0 +1,11 @@
+D:\C7\Module2\OOP2\OOP2\FileIO\bin\Debug\netcoreapp2.2\FileIO.deps.json
+D:\C7\Module2\OOP2\OOP2\FileIO\bin\Debug\netcoreapp2.2\FileIO.runtimeconfig.json
+D:\C7\Module2\OOP2\OOP2\FileIO\bin\Debug\netcoreapp2.2\FileIO.runtimeconfig.dev.json
+D:\C7\Module2\OOP2\OOP2\FileIO\bin\Debug\netcoreapp2.2\FileIO.dll
+D:\C7\Module2\OOP2\OOP2\FileIO\bin\Debug\netcoreapp2.2\FileIO.pdb
+D:\C7\Module2\OOP2\OOP2\FileIO\obj\Debug\netcoreapp2.2\FileIO.csprojAssemblyReference.cache
+D:\C7\Module2\OOP2\OOP2\FileIO\obj\Debug\netcoreapp2.2\FileIO.csproj.CoreCompileInputs.cache
+D:\C7\Module2\OOP2\OOP2\FileIO\obj\Debug\netcoreapp2.2\FileIO.AssemblyInfoInputs.cache
+D:\C7\Module2\OOP2\OOP2\FileIO\obj\Debug\netcoreapp2.2\FileIO.AssemblyInfo.cs
+D:\C7\Module2\OOP2\OOP2\FileIO\obj\Debug\netcoreapp2.2\FileIO.dll
+D:\C7\Module2\OOP2\OOP2\FileIO\obj\Debug\netcoreapp2.2\FileIO.pdb

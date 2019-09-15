@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace practice3_1
@@ -41,5 +42,16 @@ namespace practice3_1
             }
         }
 
+        public void ExportFile()
+        {
+            foreach (var item in AnimalList)
+            {
+                string path = item.ID + ".txt";
+                using (StreamWriter file = new StreamWriter(path))
+                {
+                    file.WriteLine(item.ToString());
+                }
+            }
+        }
     }
 }

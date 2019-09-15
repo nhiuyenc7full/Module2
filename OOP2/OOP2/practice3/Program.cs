@@ -12,9 +12,9 @@ namespace practice3_1
         static AnimalRepository animalRepo = new AnimalRepository();
         static void Main(string[] args)
         {
-            Menu();
+            DisplayMenu();
         }
-        static void Menu()
+        static void DisplayMenu()
         {
             Console.WriteLine("          ***********************************");
             Console.WriteLine("          *     ANIMAL MANAGEMENT SYSTEM    *");
@@ -25,19 +25,21 @@ namespace practice3_1
             Console.WriteLine("          * 5. View Marine Animals          *");
             Console.WriteLine("          * 6. View All Animals             *");
             Console.WriteLine("          * 7. Delete Animal                *");
-            Console.WriteLine("          * 8. Exit                         *");
+            Console.WriteLine("          * 8. Export file                  *");
+            Console.WriteLine("          * 9. Exit                         *");
             Console.WriteLine("          ***********************************");
             int choose;
             string str = Console.ReadLine();
-            while (!int.TryParse(str, out choose) || choose <= 0 || choose > 8)
+            while (!int.TryParse(str, out choose) || choose <= 0 || choose > 9)
             {
                 Console.Write("Enter again! ");
                 str = Console.ReadLine();
             }
-            Process(choose);
+            ChooseMenu(choose);
         }
-        static void Process(int choose)
+        static void ChooseMenu(int choose)
         {
+            Console.Clear();
             switch (choose)
             {
                 case 1:
@@ -145,14 +147,17 @@ namespace practice3_1
                     }
                     break;
                 case 8:
+                    animalRepo.ExportFile();
+                    Console.WriteLine("All animal's information was exported in file.");
+                    break;
+                case 9:
                     {
-                        Console.Clear();
                         Console.WriteLine("Exit");
                         Environment.Exit(Environment.ExitCode);
                     }
                     break;
             }
-            Menu();
+            DisplayMenu();
         }
     }
 }

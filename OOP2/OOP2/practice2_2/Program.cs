@@ -131,7 +131,7 @@ namespace practice2_2
                     Environment.Exit(Environment.ExitCode);
                     break;
                 default:
-                    Console.WriteLine("Enter 1, 2, 3, 4 or 5: ");
+                    Console.WriteLine("Enter 1, 2, 3, 4, 5 or 6: ");
                     Menu();
                     break;
             }

@@ -1,0 +1,1 @@
+ID: 101; Name: ca; Age: 12; Type: practice3_1.Crocodile
