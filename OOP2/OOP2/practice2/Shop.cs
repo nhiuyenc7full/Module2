@@ -74,7 +74,60 @@ namespace practice2_1
                     file.WriteLine(item.ViewInfor());
                 }
             }
-            
         }
+        public void SearchProductEdit()
+        {
+            Console.Write("Enter name of product you want to edit: ");
+            string str = Console.ReadLine();
+            //foreach (Product item in productList)
+            //{
+            //    if (str.Equals(item.Name))
+            //    {
+            //        item.ViewInfor();
+            //        EditProduct(item);
+            //        productList.Add(item);
+            //    }
+            //}
+            for (int i = 0; i < productList.Count; i++)
+            {
+                if (str.Equals(productList[i].Name))
+                {
+                    EditProduct(productList[i]);
+                }
+            }
+        }
+
+        public void EditProduct(Product item)
+        {
+            Console.WriteLine("What do you want to change? Choose price (press 1) or decription (press 2).");
+            string str = Console.ReadLine();
+            int editChoose;
+            while(!int.TryParse(str, out editChoose) || editChoose < 1 || editChoose > 3)
+            {
+                Console.Write("Enter again! ");
+                str = Console.ReadLine();
+            }
+            switch (editChoose)
+            {
+                case 1:
+                    Console.Write("Enter price: ");
+                    str = Console.ReadLine();
+                    int price;
+                    while (!int.TryParse(str, out price))
+                    {
+                        Console.Write("Enter again! ");
+                        str = Console.ReadLine();
+                    }
+                    item.Price = price;
+                    break;
+                case 2:
+                    Console.Write("Enter decription: ");
+                    string decription = Console.ReadLine();
+                    item.Decription = decription;
+                    break;
+
+            }
+        }
+
     }
 }

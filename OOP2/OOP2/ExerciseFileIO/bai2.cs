@@ -32,7 +32,7 @@ namespace ExerciseFileIO
             column = checkNum(str);
 
             Random num = new Random();
-            using (swW = new StreamWriter(path))
+            using (swW = new StreamWriter(path, true)) ///append: true: cho ghi file; false: k cho ghi tiếp
             {
                 //swW.WriteLine("The row: {0}; the column: {1}", row, column);
                 for (int i = 0; i < row; i++)
@@ -142,7 +142,6 @@ namespace ExerciseFileIO
             int[,] array = new int[row, column];
             using (swR = new StreamReader(path))
             {
-
                 string data = String.Empty;
                 for (int i = 0; i < row; i++)
                 {
@@ -154,7 +153,6 @@ namespace ExerciseFileIO
                             array[i, j] = int.Parse(stringNum[j]);
                         }
                         Console.WriteLine();
-
                     }
                 }
             }

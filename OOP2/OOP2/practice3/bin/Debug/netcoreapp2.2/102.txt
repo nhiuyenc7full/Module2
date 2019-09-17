@@ -1,0 +1,1 @@
+ID: 102; Name: uyen2; Age: 45; Type: practice3_1.Crocodile

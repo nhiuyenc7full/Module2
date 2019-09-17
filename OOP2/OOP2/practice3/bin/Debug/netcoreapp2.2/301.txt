@@ -1,1 +1,1 @@
-ID: 301; Name: dfgb; Age: 45; Type: practice3_1.Fish
+ID: 301; Name: dat; Age: 10; Type: practice3_1.Fish

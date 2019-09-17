@@ -4,7 +4,7 @@ using System.Text;
 
 namespace practice2_1
 {
-    class program
+    public class program
     {   
         private static Shop shop;
         private static Product product;
@@ -22,12 +22,13 @@ namespace practice2_1
             Console.WriteLine("\t\t*     3. Iterate product list      *");
             Console.WriteLine("\t\t*     4. Search product            *");
             Console.WriteLine("\t\t*     5. Export file               *");
-            Console.WriteLine("\t\t*     6. Exit                      *");
+            Console.WriteLine("\t\t*     6. Edit file                 *");
+            Console.WriteLine("\t\t*     7. Exit                      *");
             Console.WriteLine("\t\t************************************\n");
 
             int choose;
             string str = Console.ReadLine();
-            while(!int.TryParse(str, out choose) || choose < 1 || choose > 6)
+            while(!int.TryParse(str, out choose) || choose < 1 || choose > 7)
             {
                 Console.Write("Enter again! ");
                 str = Console.ReadLine();
@@ -107,6 +108,9 @@ namespace practice2_1
                     Console.WriteLine("File was exported.");
                     break;
                 case 6:
+                    shop.SearchProductEdit();
+                    break;
+                case 7:
                     Console.WriteLine("Exit.");
                     Environment.Exit(Environment.ExitCode);
                     break;

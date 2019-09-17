@@ -15,7 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "practice3_2", "practice3_2\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileIO", "FileIO\FileIO.csproj", "{023DEED7-7FDB-4FAA-BAF1-C758297FFC89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseFileIO", "ExerciseFileIO\ExerciseFileIO.csproj", "{CD57A131-65B9-4B73-9206-65AFB6A42C7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciseFileIO", "ExerciseFileIO\ExerciseFileIO.csproj", "{CD57A131-65B9-4B73-9206-65AFB6A42C7D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise4_1", "Exercise4_1\Exercise4_1.csproj", "{9C53CD85-0749-40A8-BD52-2EDA06394F45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise4_2", "Exercise4_2\Exercise4_2.csproj", "{D9028916-EBF0-47D3-8FF2-C14C8A9DE7E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon", "Pokemon\Pokemon.csproj", "{527BA974-F577-43CF-9B5C-FF43FBA5EEAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{CD57A131-65B9-4B73-9206-65AFB6A42C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD57A131-65B9-4B73-9206-65AFB6A42C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD57A131-65B9-4B73-9206-65AFB6A42C7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C53CD85-0749-40A8-BD52-2EDA06394F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C53CD85-0749-40A8-BD52-2EDA06394F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C53CD85-0749-40A8-BD52-2EDA06394F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C53CD85-0749-40A8-BD52-2EDA06394F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9028916-EBF0-47D3-8FF2-C14C8A9DE7E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9028916-EBF0-47D3-8FF2-C14C8A9DE7E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9028916-EBF0-47D3-8FF2-C14C8A9DE7E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9028916-EBF0-47D3-8FF2-C14C8A9DE7E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{527BA974-F577-43CF-9B5C-FF43FBA5EEAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{527BA974-F577-43CF-9B5C-FF43FBA5EEAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{527BA974-F577-43CF-9B5C-FF43FBA5EEAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{527BA974-F577-43CF-9B5C-FF43FBA5EEAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

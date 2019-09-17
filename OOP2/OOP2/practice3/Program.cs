@@ -26,11 +26,12 @@ namespace practice3_1
             Console.WriteLine("          * 6. View All Animals             *");
             Console.WriteLine("          * 7. Delete Animal                *");
             Console.WriteLine("          * 8. Export file                  *");
-            Console.WriteLine("          * 9. Exit                         *");
+            Console.WriteLine("          * 9. Edit file                    *");
+            Console.WriteLine("          * 10. Exit                        *");
             Console.WriteLine("          ***********************************");
             int choose;
             string str = Console.ReadLine();
-            while (!int.TryParse(str, out choose) || choose <= 0 || choose > 9)
+            while (!int.TryParse(str, out choose) || choose <= 0 || choose > 10)
             {
                 Console.Write("Enter again! ");
                 str = Console.ReadLine();
@@ -85,7 +86,7 @@ namespace practice3_1
                     break;
                 case 3:
                     {
-                        Console.WriteLine("Enter name of fish: ");
+                        Console.Write("Enter name of fish: ");
                         string name = Console.ReadLine();
 
                         Console.Write("Enter age of fish: ");
@@ -151,6 +152,9 @@ namespace practice3_1
                     Console.WriteLine("All animal's information was exported in file.");
                     break;
                 case 9:
+                    animalRepo.EditFile();
+                    break;
+                case 10:
                     {
                         Console.WriteLine("Exit");
                         Environment.Exit(Environment.ExitCode);

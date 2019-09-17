@@ -1,0 +1,11 @@
+D:\C7\Module2\OOP2\OOP2\Pokemon\bin\Debug\netcoreapp2.2\Pokemon.deps.json
+D:\C7\Module2\OOP2\OOP2\Pokemon\bin\Debug\netcoreapp2.2\Pokemon.runtimeconfig.json
+D:\C7\Module2\OOP2\OOP2\Pokemon\bin\Debug\netcoreapp2.2\Pokemon.runtimeconfig.dev.json
+D:\C7\Module2\OOP2\OOP2\Pokemon\bin\Debug\netcoreapp2.2\Pokemon.dll
+D:\C7\Module2\OOP2\OOP2\Pokemon\bin\Debug\netcoreapp2.2\Pokemon.pdb
+D:\C7\Module2\OOP2\OOP2\Pokemon\obj\Debug\netcoreapp2.2\Pokemon.csprojAssemblyReference.cache
+D:\C7\Module2\OOP2\OOP2\Pokemon\obj\Debug\netcoreapp2.2\Pokemon.csproj.CoreCompileInputs.cache
+D:\C7\Module2\OOP2\OOP2\Pokemon\obj\Debug\netcoreapp2.2\Pokemon.AssemblyInfoInputs.cache
+D:\C7\Module2\OOP2\OOP2\Pokemon\obj\Debug\netcoreapp2.2\Pokemon.AssemblyInfo.cs
+D:\C7\Module2\OOP2\OOP2\Pokemon\obj\Debug\netcoreapp2.2\Pokemon.dll
+D:\C7\Module2\OOP2\OOP2\Pokemon\obj\Debug\netcoreapp2.2\Pokemon.pdb
