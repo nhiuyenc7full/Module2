@@ -10,7 +10,7 @@ namespace Exercise4_2
         int ID { get; set; }
         string Class { get; set; }
         int Semester { get; set; }
-        float AverageMark { get; set; }
+        double AverageMark { get; set; }
 
         void Display();
     }

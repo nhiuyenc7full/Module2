@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace Pokemon
 {
@@ -7,7 +8,12 @@ namespace Pokemon
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            if(File.Exists("D:/pokemon"))
+            {
+                File.Create("D:/pokemon");
+            }
+            PokemonRepository.RefreshListPokemon();
+            //PokemonRepository.AddToListFile();
             DisplayMenu();
         }
         static void DisplayMenu()
@@ -22,7 +28,7 @@ namespace Pokemon
             Console.WriteLine("\t\t\t*     5. Show sound                 *");
             Console.WriteLine("\t\t\t*     6. Rating                     *");
             Console.WriteLine("\t\t\t*     7. Export file                *");
-            Console.WriteLine("\t\t\t*     8. Add into list              *");
+            Console.WriteLine("\t\t\t*     8. Add into list file         *");
             Console.WriteLine("\t\t\t*     9. Exit                       *");
             Console.WriteLine("\t\t\t************************************* \n");
 
@@ -44,6 +50,8 @@ namespace Pokemon
             {
                 case 1:
                     CreatePokemon();
+                    PokemonRepository.ExportFile();
+                    PokemonRepository.AddToListFile();
                     break;
                 case 2:
                     PokemonRepository.ShowListPokemon();
@@ -53,6 +61,7 @@ namespace Pokemon
                     break;
                 case 4:
                     PokemonRepository.EditInfo();
+                    PokemonRepository.ExportFile();
                     break;
                 case 5:
                     Console.WriteLine("Doing...");
@@ -64,7 +73,7 @@ namespace Pokemon
                     PokemonRepository.ExportFile();
                     break;
                 case 8:
-                    PokemonRepository.ExportList();
+                    PokemonRepository.AddToListFile();
                     break;
                 case 9:
                     Console.WriteLine("Exit the program.");
@@ -75,19 +84,20 @@ namespace Pokemon
         }
         static void CreatePokemon()
         {
+            //PokemonClass.Count = PokemonRepository.CheckFile();
             Console.Write("Enter the Name of pokemon: ");
             string name = Console.ReadLine();
 
             Console.WriteLine("Choose the Type of pokemon: ");
-            Console.Write("How many type does the pokemon have? ");
+            Console.Write("How many types does the pokemon have? ");
             string str = Console.ReadLine();
             int numberType;
-            while (!int.TryParse(str, out numberType) || numberType < 1 || numberType > 11)
+            while(!int.TryParse(str, out numberType))
             {
                 Console.Write("Enter again! ");
                 str = Console.ReadLine();
             }
-            List<string> type = PokemonRepository.ChooseType(numberType);
+            string[] type = PokemonRepository.ChooseType(numberType);
 
             Console.Write("Enter the Height of pokemon: ");
             int height;
@@ -107,13 +117,8 @@ namespace Pokemon
                 str = Console.ReadLine();
             }
             Console.Write("Enter HP of pokemon: ");
-            int hp;
             str = Console.ReadLine();
-            while (!int.TryParse(str, out hp) || hp < 1 || hp > 5000)
-            {
-                Console.Write("Enter again! ");
-                str = Console.ReadLine();
-            }
+            int hp = PokemonRepository.CheckHP(str);
             Console.Write("Enter the Attack of pokemon: ");
             int attack;
             str = Console.ReadLine();

@@ -1,83 +1,105 @@
 ﻿using System;
 using System.IO;
+using System.Text;
 
 namespace FileIO
 {
     class Program
     {
-        #region streamswriter
-        //static void Main(string[] args)
+        #region đơn giản
+        //static void Main()
         //{
-        //    Console.WriteLine("Create a new file: ");
-
-        //    WriteToFile("text.txt");
-
-        //}
-
-        //private static void WriteToFile(string path)
-        //{
-        //    StreamWriter f = new StreamWriter(path);
-        //    Random random = new Random();
-        //    for (int i = 0; i < 4; i++)
+        //    string str = "uyen";
+        //    string str1 = "uyen1";
+        //    string[] str2 = new string[] { "uyen", "lan" };
+        //    string[] stringg = { "uyen", "lan", "hoa" };
+        //    string file = @"D:/pokemon/uyen.txt";
+        //    string file1 = @"D:/pokemon/uyen1.txt";
+        //    string[] createText = { "Nhị Uyên", "And", "Welcome" };
+        //    File.WriteAllText(file1, str1);
+        //    if (!File.Exists(file))
         //    {
-        //        f.WriteLine(random.Next(1, 100));
+        //        File.WriteAllLines(file, createText, Encoding.UTF8);
         //    }
-        //    f.Close();
+        //    else
+        //    {
+        //        Console.WriteLine("Empty");
+        //    }
+
         //}
         #endregion
 
-        // streamwriter nhập vào một số là chiều dài của mảng, sau đó nhập vào từng phần tử của mảng vào file.
-        //Viết trên một dòng cách nhau bằng dấu _.
+        #region level 1: đọc file từ @"D:\pokemon\1000.txt"
+        //static void Main()
+        //{
+        //    string path = @"D:\pokemon\1000.txt";
+        //    string data = String.Empty;
+        //    try
+        //    {
+        //        using(StreamReader rFile = new StreamReader(path))
+        //        {
+        //            while ((data = rFile.ReadLine()) != null)
+        //            {
+        //                Console.WriteLine(data);
+        //            }
+        //        }
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        Console.WriteLine("Can not read file.");
+        //        Console.WriteLine(e.Message);
+        //    }
+        //}
+        #endregion
+
+        #region level 2: dùng append để ghi tiếp vào file sẵn có, Environment.NewLine
+        //static void Main()
+        //{
+        ////file "WriteLines.txt" được lưu ở thư mục Dell/Documents
+        //    //Environment.NewLine: dùng để xuống dòng trong khi ghi
+        //    string[] lines = { "First line", "Second line", "Third line", Environment.NewLine};
+
+        //    string docPath =
+        //      Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+        //    Console.WriteLine("uyen");
+        //    //viết từng dòng vào file, mỗi dòng là một phần tử của string array đã cho.
+        //    using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "WriteLines.txt")))
+        //    {
+        //        foreach (string line in lines)
+        //        {
+        //            outputFile.WriteLine(line);
+        //            outputFile.WriteLine(Environment.NewLine);
+        //        }
 
 
-        /*Bài 2
-         * Tạo menu mảng HAI chiều:
-         * 1. Tìm max của mảng
-         * 2. Tìm min của mảng
-         * 3. Tổng của mảng
-         * 4. sắp xếp tăng dần tất cả
-         * 5. Tìm kiếm phần tử index n của mảng
-         */
+        //    }
+        //    Console.WriteLine("uyen");
 
-        /*Bài 3
-         * 6. product. bổ sung menu cuối cũng là ghi file
-         * (tên file phải là id)
-         * 7. Tìm kiếm và chỉnh sửa dựa trên tên file
-         */
+        //    //viết tiếp các dòng tiếp theo trong file dùng append TRUE.
+        //    using (StreamWriter outputFile1 = new StreamWriter(Path.Combine(docPath, "WriteLines.txt"), true))
+        //    {
+        //        outputFile1.WriteLine("Fourth Line");
+        //    }
+        //    Console.WriteLine("uyen");
+        //    ////Ghi đè lên file cũ.
+        //    //using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "WriteLines.txt")))
+        //    //{
+        //    //    foreach (string line in lines)
+        //    //        outputFile.WriteLine(line);
+        //    //}
+        //}
 
-        /*Bài 4 giống bài 3, làm animal
-         */
+        #endregion
 
-        static void Main()
-        {
-            WriteToFile("number.txt");
-            findMax("number.txt");
-        }
+        #region level 3: 
 
-        private static void findMax(string path)
-        {
-            StreamReader fR = new StreamReader(path);
 
-        }
 
-        private static void WriteToFile(string path)
-        {
-            StreamWriter fW = new StreamWriter(path);
+        #endregion
 
-            Console.Write("Enter the Length of the Array: ");
-            int length = Int32.Parse(Console.ReadLine());
-            int[] array = new int[length];
-
-            Random random = new Random();
-            fW.WriteLine("The Length of the Array: " + length);
-            for (int i = 0; i < length; i++)
-            {
-                array[i] = random.Next(1, 10);
-                fW.Write(array[i] + " ");
-            }
-            fW.Close();
-        }
-
+        #region
+        #endregion
 
     }
 

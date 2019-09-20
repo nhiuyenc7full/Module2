@@ -8,7 +8,7 @@ namespace Pokemon
     {
         int ID { get; set; }
         string Name { get; set; }
-        List<string> Type { get; set; }
+        string[] Type { get; set; }
         int Height { get; set; }
         int Weight { get; set; }
         int HP { get; set; }

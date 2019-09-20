@@ -1,0 +1,11 @@
+D:\C7\Module2\OOP2\OOP2\Exercise4_2\bin\Debug\netcoreapp2.2\Exercise4_2.deps.json
+D:\C7\Module2\OOP2\OOP2\Exercise4_2\bin\Debug\netcoreapp2.2\Exercise4_2.runtimeconfig.json
+D:\C7\Module2\OOP2\OOP2\Exercise4_2\bin\Debug\netcoreapp2.2\Exercise4_2.runtimeconfig.dev.json
+D:\C7\Module2\OOP2\OOP2\Exercise4_2\bin\Debug\netcoreapp2.2\Exercise4_2.dll
+D:\C7\Module2\OOP2\OOP2\Exercise4_2\bin\Debug\netcoreapp2.2\Exercise4_2.pdb
+D:\C7\Module2\OOP2\OOP2\Exercise4_2\obj\Debug\netcoreapp2.2\Exercise4_2.csprojAssemblyReference.cache
+D:\C7\Module2\OOP2\OOP2\Exercise4_2\obj\Debug\netcoreapp2.2\Exercise4_2.csproj.CoreCompileInputs.cache
+D:\C7\Module2\OOP2\OOP2\Exercise4_2\obj\Debug\netcoreapp2.2\Exercise4_2.AssemblyInfoInputs.cache
+D:\C7\Module2\OOP2\OOP2\Exercise4_2\obj\Debug\netcoreapp2.2\Exercise4_2.AssemblyInfo.cs
+D:\C7\Module2\OOP2\OOP2\Exercise4_2\obj\Debug\netcoreapp2.2\Exercise4_2.dll
+D:\C7\Module2\OOP2\OOP2\Exercise4_2\obj\Debug\netcoreapp2.2\Exercise4_2.pdb

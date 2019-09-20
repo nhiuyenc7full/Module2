@@ -1,23 +1,22 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Exercise4_2
 {
-    class StudentMark : IStudentMark
+    public class StudentMark : IStudentMark
     {
-        private string _fullName;
-        private int _iD = 1000;
-        private string _class;
-        private int _semester;
-        private float _averageMark;
-        private static int id = 0;
-        private List<int> SubjectMarkList = new List<int>();
+        private static int id = 1;
+        //static int sum = 0;
+        private double averageMark;
+
         public int ID { get; set; }
         public string Class { get; set; }
         public int Semester { get; set; }
-        public float AverageMark { get; set; }
+        public double AverageMark { get => AveCal(); set => averageMark = value; }
         public string FullName { get; set; }
+        public Dictionary<string, int> SubjectMarkList { get; set; }
 
         public StudentMark ()
         {
@@ -25,27 +24,37 @@ namespace Exercise4_2
             ID = ID + id;
             Class = "12b1";
             Semester = 2;
-            AverageMark = 9.0f;
-            SubjectMarkList = new List<int>(5);
+            AverageMark = 9;
+            SubjectMarkList = new Dictionary<string, int>();
             id++;
         }
 
-        public StudentMark(string fullName, int id, string _class, int semester, float averageMark)
+        public StudentMark(string fullName, string _class, int semester, Dictionary<string, int> subjectMarkList)
         {
             FullName = fullName;
             ID = ID + id;
             Class = _class;
             Semester = semester;
-            AverageMark = averageMark;
-            SubjectMarkList = new List<int>(5);
+            SubjectMarkList = subjectMarkList;
             id++;
         }
 
+        public double AveCal()
+        {
+            int sum = 0;
+            foreach (var item in SubjectMarkList)
+            {
+                sum += item.Value;
+            }
+            double averageMark = (double) sum /  SubjectMarkList.Count;
+            return averageMark;
+        }
+        
         public void Display()
         {
-            Console.WriteLine($"FullName: {FullName}\n" +
-                $"ID: {ID};\n" +
-                $"Class: {Class};\n" + 
+            Console.WriteLine($"ID: {ID}\n" +
+                $"FullName: {FullName}\n" +
+                $"Class: {Class}\n" + 
                 $"Semester: {Semester}\n" +
                 $"Average mark: {AverageMark}");
         }
