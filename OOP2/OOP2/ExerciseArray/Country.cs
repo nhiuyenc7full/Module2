@@ -58,6 +58,28 @@ namespace ExerciseArray
                             }
                         }
                     }
+                    Console.WriteLine("Type what you want to insert: ");
+                    Console.Write("Country: ");
+                    string country = Console.ReadLine();
+                    Console.Write("Region: ");
+                    string code = Console.ReadLine();
+                    Console.Write("Country: ");
+                    string region = Console.ReadLine();
+                    Console.Write("Population: ");
+                    int population = Convert.ToInt32(Console.ReadLine());
+                    Country codegym = new Country(country, code , region, population);
+                    for (int i = 0; i < countriesL.Count; i++)
+                    {
+                        if (countriesL[i].Name.Equals("Vietnam"))
+                        {
+                            countriesL.Insert(i, codegym);
+                        }
+                    }
+                    Console.ReadLine();
+                    foreach (var item in countriesL)
+                    {
+                        Console.WriteLine($"{item.Name.PadLeft(25)} : {item.Population}");
+                    }
                     break;
                 case 3:
                     foreach (var item in countriesD)
@@ -73,11 +95,19 @@ namespace ExerciseArray
                             }
                         }
                     }
+                    Console.WriteLine("Type what you want to insert: ");
+                    Console.Write("Country: ");
+                    country = Console.ReadLine();
+                    Console.Write("Region: ");
+                    code = Console.ReadLine();
+                    Console.Write("Country: ");
+                    region = Console.ReadLine();
+                    Console.Write("Population: ");
+                    population = Convert.ToInt32(Console.ReadLine());
+                    Country newCountry = new Country(country, code, region, population);
                     break;
             }
-
         }
-
         public static void DisplayMenu()
         {
             Console.WriteLine("\n\t\t\t*************************************");
