@@ -17,7 +17,7 @@ namespace Practice7_1
         public string Password { get => password; set => password = value; }
         public List<int?> PhoneList { get => phoneList; set => phoneList = value; }
 
-        public int? this[int index] { get => this[index]; set => this[index] = value; }
+        //public int? this[int index] { get => this[index]; set => this[index] = value; }
 
         public User()
         {
@@ -27,7 +27,7 @@ namespace Practice7_1
         }
         public User(string name, string password)
         {
-            PhoneList = phoneList;
+            PhoneList = new List<int?>();
             Name = name;
             Password = password;
             ID = ID + idCount;

@@ -27,7 +27,7 @@ namespace Practice7_1
             int choose;
             while (!int.TryParse(str, out choose) || choose < 0 || choose > 4)
             {
-                Console.Write("Enter again! Choose from 1 to 4! \t");
+                Console.Write("Enter again! Choose from 1 to 4!\t");
                 str = Console.ReadLine();
             }
             ChooseMenu(choose);
@@ -63,7 +63,7 @@ namespace Practice7_1
                 userList[id].Display();
                 foreach (var item in userList[id].PhoneList)
                 {
-                    Console.WriteLine(item);
+                    Console.WriteLine("Phone number: {0}", item);
                 }
             }
         }
@@ -84,7 +84,7 @@ namespace Practice7_1
             }
             else
             {
-                if (userList[id].Name == password)
+                if (userList[id].Password == password)
                 {
                     Console.WriteLine("User Checked! ");
                 }

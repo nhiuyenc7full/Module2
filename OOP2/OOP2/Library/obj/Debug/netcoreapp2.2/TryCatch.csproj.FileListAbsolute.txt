@@ -1,0 +1,11 @@
+D:\C7\Module2\OOP2\OOP2\Library\bin\Debug\netcoreapp2.2\TryCatch.deps.json
+D:\C7\Module2\OOP2\OOP2\Library\bin\Debug\netcoreapp2.2\TryCatch.runtimeconfig.json
+D:\C7\Module2\OOP2\OOP2\Library\bin\Debug\netcoreapp2.2\TryCatch.runtimeconfig.dev.json
+D:\C7\Module2\OOP2\OOP2\Library\bin\Debug\netcoreapp2.2\TryCatch.dll
+D:\C7\Module2\OOP2\OOP2\Library\bin\Debug\netcoreapp2.2\TryCatch.pdb
+D:\C7\Module2\OOP2\OOP2\Library\obj\Debug\netcoreapp2.2\TryCatch.csprojAssemblyReference.cache
+D:\C7\Module2\OOP2\OOP2\Library\obj\Debug\netcoreapp2.2\TryCatch.csproj.CoreCompileInputs.cache
+D:\C7\Module2\OOP2\OOP2\Library\obj\Debug\netcoreapp2.2\TryCatch.AssemblyInfoInputs.cache
+D:\C7\Module2\OOP2\OOP2\Library\obj\Debug\netcoreapp2.2\TryCatch.AssemblyInfo.cs
+D:\C7\Module2\OOP2\OOP2\Library\obj\Debug\netcoreapp2.2\TryCatch.dll
+D:\C7\Module2\OOP2\OOP2\Library\obj\Debug\netcoreapp2.2\TryCatch.pdb

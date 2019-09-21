@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciseArray", "ExerciseAr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise6_1", "Exercise6_1\Exercise6_1.csproj", "{A5FB0E61-25DD-4875-8185-A16ADEC95F49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice7_1", "Practice7_1\Practice7_1.csproj", "{A01C345F-AE6E-4448-806F-96868CA4DEA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice7_1", "Practice7_1\Practice7_1.csproj", "{A01C345F-AE6E-4448-806F-96868CA4DEA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryCatch", "Library\TryCatch.csproj", "{BD3DF8B9-6F80-4B92-B6DC-3C7D960D7B7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{A01C345F-AE6E-4448-806F-96868CA4DEA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A01C345F-AE6E-4448-806F-96868CA4DEA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A01C345F-AE6E-4448-806F-96868CA4DEA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD3DF8B9-6F80-4B92-B6DC-3C7D960D7B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD3DF8B9-6F80-4B92-B6DC-3C7D960D7B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD3DF8B9-6F80-4B92-B6DC-3C7D960D7B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD3DF8B9-6F80-4B92-B6DC-3C7D960D7B7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

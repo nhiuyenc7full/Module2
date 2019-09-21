@@ -10,7 +10,7 @@ namespace Practice7_1
         string Name { get; set; }
         string Password { get; set; }
 
-        int? this[int index] { get; set; }
+        //int? this[int index] { get; set; }
 
         void Display();
     }
