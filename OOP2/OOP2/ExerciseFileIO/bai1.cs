@@ -105,8 +105,11 @@ namespace ExerciseFileIO
                 case 4:
                     if (arrayNum.Length > 0)
                     {
-                        SortArray(length);
-
+                        for (int i = 0; i < arrayNum.Length; i++)
+                        {
+                            Console.WriteLine(arrayNum[i] + " ");
+                        }
+                        arrayNum = SortArray(length);
                         using (swW = new StreamWriter(path))
                         {
                             swW.WriteLine("Length: " + length);
@@ -116,6 +119,10 @@ namespace ExerciseFileIO
                             }
                         }
                         Console.WriteLine("Your array is re-sorted!");
+                        for (int i = 0; i < arrayNum.Length; i++)
+                        {
+                            Console.WriteLine(arrayNum[i] + " ");
+                        }
                     }
                     else
                     {
@@ -124,9 +131,18 @@ namespace ExerciseFileIO
 
                     break;
                 case 5:
+                    Console.Write("Input the number you want to find: ");
+                    string str = Console.ReadLine();
+                    int number;
+                    while (!int.TryParse(str, out number))
+                    {
+                        Console.WriteLine("Enter again!");
+                        str = Console.ReadLine();
+                    }
                     if (arrayNum.Length > 0)
                     {
-                        int index = FindElement();
+                        //int index = FindElement(number);
+                        int index = BinarySearch(arrayNum, 0, arrayNum.Length - 1, number);
                         if (index == -1)
                         {
                             Console.WriteLine("Not found!");
@@ -168,7 +184,7 @@ namespace ExerciseFileIO
         static int FindMax()
         {
             int max = arrayNum[0];
-            for (int i = 0; i < length; i++)
+            for (int i = 1; i < length; i++)
             {
                 max = Math.Max(max, arrayNum[i]);
             }
@@ -179,7 +195,7 @@ namespace ExerciseFileIO
         {
 
             int min = arrayNum[0];
-            for (int i = 0; i < length; i++)
+            for (int i = 1; i < length; i++)
             {
                 min = Math.Min(min, arrayNum[i]);
             }
@@ -212,25 +228,58 @@ namespace ExerciseFileIO
             return arrayNum;
         }
 
-        static int FindElement()
+        static int BinarySearch(int[] array, int left, int right, int element)
         {
-            Console.Write("Input the number you want to find: ");
-            string str = Console.ReadLine();
-            int number;
-            while(!int.TryParse(str, out number))
+            
+            if (right >= left)
             {
-                Console.WriteLine("Enter again!");
-                str = Console.ReadLine();
+                int mid = left + (right - left) / 2;
+                if (array[mid] == element)
+                {
+                    return mid;
+                }
+                if (array[mid] > element)
+                {
+                    return BinarySearch(array, left, mid - 1, element);
+                }
+                return BinarySearch(array, mid + 1, right, element);
             }
+            return -1;
+        }
+
+        static void SelectedSort(int[] array)
+        {
+            int index;
+            int temp;
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                index = i;
+                for (int j = i + 1; j < array.Length; j++)
+                {
+                    if (array[index] > array[j])
+                    {
+                        index = j;
+                    }
+                }
+                if (index != i)
+                {
+                    temp = array[i];
+                    array[i] = array[index];
+                    array[index] = temp;
+                }
+            }
+        }
+        
+        static int FindElement(int element)
+        {
             for (int i = 0; i < length; i++)
             {
-                if (number == arrayNum[i])
+                if (element == arrayNum[i])
                 {
                     return i;
                 }
             }
             return -1;
         }
-
     }
 }

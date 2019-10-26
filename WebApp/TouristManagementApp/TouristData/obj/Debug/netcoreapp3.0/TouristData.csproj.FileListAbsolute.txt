@@ -1,0 +1,13 @@
+D:\C7\Module2\WebApp\TouristManagementApp\TouristData\bin\Debug\netcoreapp3.0\TouristCore.dll
+D:\C7\Module2\WebApp\TouristManagementApp\TouristData\obj\Debug\netcoreapp3.0\TouristData.csprojAssemblyReference.cache
+D:\C7\Module2\WebApp\TouristManagementApp\TouristData\obj\Debug\netcoreapp3.0\TouristData.AssemblyInfoInputs.cache
+D:\C7\Module2\WebApp\TouristManagementApp\TouristData\obj\Debug\netcoreapp3.0\TouristData.AssemblyInfo.cs
+D:\C7\Module2\WebApp\TouristManagementApp\TouristData\bin\Debug\netcoreapp3.0\TouristData.deps.json
+D:\C7\Module2\WebApp\TouristManagementApp\TouristData\bin\Debug\netcoreapp3.0\TouristData.runtimeconfig.json
+D:\C7\Module2\WebApp\TouristManagementApp\TouristData\bin\Debug\netcoreapp3.0\TouristData.runtimeconfig.dev.json
+D:\C7\Module2\WebApp\TouristManagementApp\TouristData\bin\Debug\netcoreapp3.0\TouristData.dll
+D:\C7\Module2\WebApp\TouristManagementApp\TouristData\bin\Debug\netcoreapp3.0\TouristData.pdb
+D:\C7\Module2\WebApp\TouristManagementApp\TouristData\bin\Debug\netcoreapp3.0\TouristCore.pdb
+D:\C7\Module2\WebApp\TouristManagementApp\TouristData\obj\Debug\netcoreapp3.0\TouristData.csproj.CopyComplete
+D:\C7\Module2\WebApp\TouristManagementApp\TouristData\obj\Debug\netcoreapp3.0\TouristData.dll
+D:\C7\Module2\WebApp\TouristManagementApp\TouristData\obj\Debug\netcoreapp3.0\TouristData.pdb

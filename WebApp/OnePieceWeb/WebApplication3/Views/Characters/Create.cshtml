@@ -1,0 +1,68 @@
+﻿@model OnePiece.Domain.Character
+@using OnePiece.Domain
+
+@{
+    ViewData["Title"] = "Create";
+    var pirates = new List<Pirate>();
+    pirates = ViewBag.Pirates;
+    var devilfruits = new List<DevilFruit>();
+    devilfruits = ViewBag.DevilFruits;
+}
+
+<h1>Create</h1>
+
+<h4>Character</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gender" class="control-label"></label>
+                <input asp-for="Gender" class="form-control" />
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PirateId" value="Id Pirate" class="control-label"></label>
+                <select asp-for="PirateId" class="form-control">
+
+                    @foreach (var pirate in pirates)
+                    {
+                    <option value="@pirate.PirateId">@pirate.Name</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="DevilFruitId" class="control-label"></label>
+                <select asp-for="DevilFruitId" class ="form-control">
+                    @foreach (var devilfruit in devilfruits)
+                    {
+                        <option value="@devilfruit.DevilFruitId">@devilfruit.Name</option>
+                    }
+
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,43 @@
+﻿@model IEnumerable<CauHoi>
+@{
+    ViewData["Title"] = "Thi";
+    //var dapAn = new DapAn();
+    //var dapAns = new List<DapAn>();
+}
+
+<h1>TracNghiem</h1>
+
+<form asp-action="List" method="post">
+    @foreach (var item in Model)
+    {
+
+        <div>
+            <ul id="@item.Id">
+                <li class="quiz-section-title">
+                    @item.Ten
+                </li>
+                <li class="list-item">
+                    <input type="radio" name="option-@item.Id"> @item.CauTraLoi1
+                </li>
+                <li class="list-item">
+                    <input type="radio" name="option-@item.Id"> @item.CauTraLoi2
+                </li>
+                <li class="list-item">
+                    <input type="radio" name="option-@item.Id"> @item.CauTraLoi3
+                </li>
+                <li class="list-item">
+                    <input type="radio" name="option-@item.Id"> @item.CauTraLoi4
+                </li>
+            </ul>
+            <br />
+        </div>
+        @*@dapAn.CauHoiId = @item.Id;
+            @dapAns.Add(dapAn);*@
+    }
+
+<div class="form-group">
+    <input type="submit" value="Submit" asp-action="Submit" class="btn btn-primary" />
+    @*<input type="submit" value="Submit" asp-action="Submit" asp-route-dapAns="@dapAns" class="btn btn-primary" />*@
+</div>
+
+</form>

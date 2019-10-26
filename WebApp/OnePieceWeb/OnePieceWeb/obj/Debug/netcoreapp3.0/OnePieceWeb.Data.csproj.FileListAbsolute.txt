@@ -1,0 +1,13 @@
+D:\C7\Module2\WebApp\OnePieceWeb\OnePieceWeb\bin\Debug\netcoreapp3.0\OnePieceWeb.Data.deps.json
+D:\C7\Module2\WebApp\OnePieceWeb\OnePieceWeb\bin\Debug\netcoreapp3.0\OnePieceWeb.Data.dll
+D:\C7\Module2\WebApp\OnePieceWeb\OnePieceWeb\obj\Debug\netcoreapp3.0\OnePieceWeb.Data.csprojAssemblyReference.cache
+D:\C7\Module2\WebApp\OnePieceWeb\OnePieceWeb\obj\Debug\netcoreapp3.0\OnePieceWeb.Data.AssemblyInfoInputs.cache
+D:\C7\Module2\WebApp\OnePieceWeb\OnePieceWeb\obj\Debug\netcoreapp3.0\OnePieceWeb.Data.AssemblyInfo.cs
+D:\C7\Module2\WebApp\OnePieceWeb\OnePieceWeb\bin\Debug\netcoreapp3.0\OnePieceWeb.Data.runtimeconfig.json
+D:\C7\Module2\WebApp\OnePieceWeb\OnePieceWeb\bin\Debug\netcoreapp3.0\OnePieceWeb.Data.runtimeconfig.dev.json
+D:\C7\Module2\WebApp\OnePieceWeb\OnePieceWeb\bin\Debug\netcoreapp3.0\OnePieceWeb.Data.pdb
+D:\C7\Module2\WebApp\OnePieceWeb\OnePieceWeb\bin\Debug\netcoreapp3.0\OnePiece.Domain.dll
+D:\C7\Module2\WebApp\OnePieceWeb\OnePieceWeb\bin\Debug\netcoreapp3.0\OnePiece.Domain.pdb
+D:\C7\Module2\WebApp\OnePieceWeb\OnePieceWeb\obj\Debug\netcoreapp3.0\OnePieceWeb.Data.csproj.CopyComplete
+D:\C7\Module2\WebApp\OnePieceWeb\OnePieceWeb\obj\Debug\netcoreapp3.0\OnePieceWeb.Data.dll
+D:\C7\Module2\WebApp\OnePieceWeb\OnePieceWeb\obj\Debug\netcoreapp3.0\OnePieceWeb.Data.pdb

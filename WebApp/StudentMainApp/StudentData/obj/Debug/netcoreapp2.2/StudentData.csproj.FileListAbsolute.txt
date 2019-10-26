@@ -1,0 +1,13 @@
+D:\C7\Module2\WebApp\StudentMainApp\StudentData\bin\Debug\netcoreapp2.2\StudentData.deps.json
+D:\C7\Module2\WebApp\StudentMainApp\StudentData\bin\Debug\netcoreapp2.2\StudentData.dll
+D:\C7\Module2\WebApp\StudentMainApp\StudentData\obj\Debug\netcoreapp2.2\StudentData.AssemblyInfoInputs.cache
+D:\C7\Module2\WebApp\StudentMainApp\StudentData\obj\Debug\netcoreapp2.2\StudentData.AssemblyInfo.cs
+D:\C7\Module2\WebApp\StudentMainApp\StudentData\obj\Debug\netcoreapp2.2\StudentData.csprojAssemblyReference.cache
+D:\C7\Module2\WebApp\StudentMainApp\StudentData\bin\Debug\netcoreapp2.2\StudentData.runtimeconfig.json
+D:\C7\Module2\WebApp\StudentMainApp\StudentData\bin\Debug\netcoreapp2.2\StudentData.runtimeconfig.dev.json
+D:\C7\Module2\WebApp\StudentMainApp\StudentData\bin\Debug\netcoreapp2.2\StudentData.pdb
+D:\C7\Module2\WebApp\StudentMainApp\StudentData\bin\Debug\netcoreapp2.2\StudentCore.dll
+D:\C7\Module2\WebApp\StudentMainApp\StudentData\bin\Debug\netcoreapp2.2\StudentCore.pdb
+D:\C7\Module2\WebApp\StudentMainApp\StudentData\obj\Debug\netcoreapp2.2\StudentData.csproj.CopyComplete
+D:\C7\Module2\WebApp\StudentMainApp\StudentData\obj\Debug\netcoreapp2.2\StudentData.dll
+D:\C7\Module2\WebApp\StudentMainApp\StudentData\obj\Debug\netcoreapp2.2\StudentData.pdb

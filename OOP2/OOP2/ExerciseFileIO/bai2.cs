@@ -250,6 +250,7 @@ namespace ExerciseFileIO
             }
             return " ";
         }
+
         static int checkNum(string str)
         {
             int num;

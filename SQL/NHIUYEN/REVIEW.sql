@@ -1,0 +1,23 @@
+﻿-- CREATE DATABASE database;
+-- CREATE TABLE table;
+-- DROP TABLE table; -- xóa bảng.
+-- DELETE TABLE table; -- xóa dữ liệu, không xóa lịch sử (vd, identity vẫn tăng theo lịch sử)
+-- TRUNCATE TABLE table; -- xóa dữu liệu table.
+-- INSERT table(các trường) VALUES(giá trị các trường tương ứng);
+-- INSERT table VALUES(toàn bộ giá trị trường); -- nhập toàn bộ các trường cho dòng.
+-- ALTER TABLE table ADD column1 kiểu_dữ_liệu1, column2 kiểu_dữ_liệu2, ...;
+-- ALTER TABLE table ALTER COLUMN column kiểu_dữ_liệu_mới; -- chỉ alter được từng cột từng cột, không alter nhiều cột cùng lúc
+-- ALTER TABLE table DROP COLUMN column;
+-- sp_rename tên_bảng_cũ, tên_bảng_mới; -- khuyến cáo nên xóa bảng tạo lại để kịch bản và quá trình lưu trữ khỏi bị hỏng.
+-- sp_rename 'tên_bảng.tên_cột_cũ', 'tên_cột_mới', 'COLUMN';
+-- UPDATE table SET column1 = biểu_thức1, column2 = biểu_thức2,... WHERE điều_kiện;
+-- LIKE
+-- AS
+-- IN
+-- OR, AND
+-- CASE WHEN
+-- 3 loại JOIN
+-- BETWEEN
+-- COUNT()
+-- PROCEDURE
+-- VIEW

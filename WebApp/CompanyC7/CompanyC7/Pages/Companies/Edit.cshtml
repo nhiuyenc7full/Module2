@@ -1,0 +1,41 @@
+﻿@page "{companyId=int}"
+@model CompanyC7.Pages.Companies.EditModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+<form method="post">
+    <div class="input-group">
+        <input type="hidden" asp-for="Company.Id" value="@Model.Company.Id">
+        <div class="form-group">
+            <label asp-for="Company.Name"></label>
+            <input type="text" asp-for="Company.Name" value="@Model.Company.Name" />
+            @*<span class=""></span>*@
+        </div>
+        <div class="form-group">
+            <label asp-for="Company.Location"></label>
+            <input type="text" asp-for="Company.Location" value="@Model.Company.Location" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Company.CompanyType"></label>
+            <select asp-for="Company.CompanyType" asp-items="@Model.CompanyTypes"></select>
+            @*<select asp-for="Company.CompanyType">
+
+            @foreach (var companyType in Model.CompanyTypes)
+            {
+            <option>@companyType.Text</option>
+            }
+        </select>*@
+        </div>
+        <span>
+            <button class="btn btn-group-lg btn-dark" style="width:100%" asp-for="Company.Id">
+                <span>
+                    <i class="fas fa-heart" style="font-size:24px"> Nhụy Khùng</i>
+                </span>
+            </button>
+        </span>
+    </div>
+    <a asp-page="./Listt">Back to list</a>
+</form>
+

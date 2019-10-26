@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Country>
+
+@{
+    ViewData["Title"] = "Default";
+}
+
+        <a asp-controller="Tourist"
+           asp-action="Index" class="nav-link dropdown-toggle text-dark"
+           data-toggle="dropdown">Quốc gia<b class="caret"></b></a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            @foreach (var country in Model)
+            {
+                <a class="dropdown-item" asp-controller="Tourist" asp-action="List" asp-route-CountryName="@country.Name">@country.Name</a>
+            }
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" asp-controller="Tourist" asp-action="List" asp-route-CountryName="">View all country</a>
+
+        </div>
+
+

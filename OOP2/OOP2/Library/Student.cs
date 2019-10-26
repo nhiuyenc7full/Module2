@@ -7,7 +7,7 @@ namespace Library
 {
     public class Student
     {
-        private int studentID;
+        private int studentID = 0;
         private string studentName;
         private int age;
         private string gender;
@@ -22,7 +22,6 @@ namespace Library
         public string City { get => city; set => city = value; }
         public List<Book> ListBook { get => listBook; }
 
-        //BookRepository bookRepoStudent = new BookRepository();
         StudentRepository studentRepo = new StudentRepository();
         public Student()
         {

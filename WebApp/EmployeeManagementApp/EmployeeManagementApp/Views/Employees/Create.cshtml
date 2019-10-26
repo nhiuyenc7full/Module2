@@ -1,0 +1,81 @@
+﻿@model GroupViewModel
+
+@{
+    ViewData["Title"] = "Create";
+    var groupViewModel = new GroupViewModel();
+}
+
+<h4 class="text-center">Thêm nhân viên mới</h4>
+<hr />
+
+
+<form asp-action="Create" method="post">
+    <div class="row">
+        <div class="col-md-6">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Employee.Group.Name" class="control-label"></label>
+                <select asp-for="Employee.GroupId" class="form-control" asp-items="Model.GroupList"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Employee.Name" class="control-label"></label>
+                <input asp-for="Employee.Name" class="form-control" />
+                <span asp-validation-for="Employee.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Employee.DateOfBirth" class="control-label"></label>
+                <input asp-for="Employee.DateOfBirth" class="form-control" />
+                <span asp-validation-for="Employee.DateOfBirth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Employee.Sex" class="control-label"></label>
+                <div class="row">
+                    @*<input class="form-check-input" asp-for="Employee.Sex" /> @Html.DisplayNameFor(model => model.Employee.Sex)*@
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-4">
+                        Male @Html.RadioButton("Employee.Sex", true)
+                    </div>
+                    <div class="col-sm-4">
+                        Female @Html.RadioButton("Employee.Sex", false)
+                    </div>
+                </div>
+             </div>
+        </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Employee.Tel" class="control-label"></label>
+                        <input asp-for="Employee.Tel" class="form-control" />
+                        <span asp-validation-for="Employee.Tel" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Employee.CMND" class="control-label"></label>
+                        <input asp-for="Employee.CMND" class="form-control" />
+                        <span asp-validation-for="Employee.CMND" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Employee.Email" class="control-label"></label>
+                        <input asp-for="Employee.Email" class="form-control" />
+                        <span asp-validation-for="Employee.Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Employee.Address" class="control-label"></label>
+                        <input asp-for="Employee.Address" class="form-control" />
+                        <span asp-validation-for="Employee.Address" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    @*<input type="submit" value="Thêm nhân viên" class="btn btn-primary" />*@
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Thêm nhân viên</button>
+                </div>
+            </div>
+</form>
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

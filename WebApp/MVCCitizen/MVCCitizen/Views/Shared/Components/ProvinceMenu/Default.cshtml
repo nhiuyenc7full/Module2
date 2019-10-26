@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Province>
+@{
+    ViewData["Title"] = "Default";
+}
+
+<a class="nav-link dropdown-toggle text-light"
+   data-toggle="dropdown">Tỉnh<b class="caret"></b></a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    @foreach (var province in Model)
+    {
+        <a class="dropdown-item " asp-controller="Districts" asp-action="Index" asp-route-ProvinceName="@province.Name">@province.Name</a>
+    }
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" asp-controller="Provinces" asp-action="Index" asp-route-ProvinceName="">View all provinces</a>
+
+</div>

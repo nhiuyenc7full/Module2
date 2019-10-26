@@ -1,0 +1,13 @@
+D:\C7\Module2\WebApp\CompanyC7\Company.Data\bin\Debug\netcoreapp3.0\CompanyC7.Data.deps.json
+D:\C7\Module2\WebApp\CompanyC7\Company.Data\bin\Debug\netcoreapp3.0\CompanyC7.Data.dll
+D:\C7\Module2\WebApp\CompanyC7\Company.Data\bin\Debug\netcoreapp3.0\CompanyC7.Data.pdb
+D:\C7\Module2\WebApp\CompanyC7\Company.Data\bin\Debug\netcoreapp3.0\CompanyC7.Core.dll
+D:\C7\Module2\WebApp\CompanyC7\Company.Data\bin\Debug\netcoreapp3.0\CompanyC7.Core.pdb
+D:\C7\Module2\WebApp\CompanyC7\Company.Data\obj\Debug\netcoreapp3.0\CompanyC7.Data.csprojAssemblyReference.cache
+D:\C7\Module2\WebApp\CompanyC7\Company.Data\obj\Debug\netcoreapp3.0\CompanyC7.Data.AssemblyInfoInputs.cache
+D:\C7\Module2\WebApp\CompanyC7\Company.Data\obj\Debug\netcoreapp3.0\CompanyC7.Data.AssemblyInfo.cs
+D:\C7\Module2\WebApp\CompanyC7\Company.Data\obj\Debug\netcoreapp3.0\CompanyC7.Data.csproj.CopyComplete
+D:\C7\Module2\WebApp\CompanyC7\Company.Data\obj\Debug\netcoreapp3.0\CompanyC7.Data.dll
+D:\C7\Module2\WebApp\CompanyC7\Company.Data\obj\Debug\netcoreapp3.0\CompanyC7.Data.pdb
+D:\C7\Module2\WebApp\CompanyC7\Company.Data\bin\Debug\netcoreapp3.0\CompanyC7.Data.runtimeconfig.json
+D:\C7\Module2\WebApp\CompanyC7\Company.Data\bin\Debug\netcoreapp3.0\CompanyC7.Data.runtimeconfig.dev.json

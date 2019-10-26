@@ -1,0 +1,8 @@
+D:\C7\Module2\WebApp\TouristManagementApp\TouristCore\bin\Debug\netcoreapp3.0\TouristCore.deps.json
+D:\C7\Module2\WebApp\TouristManagementApp\TouristCore\bin\Debug\netcoreapp3.0\TouristCore.dll
+D:\C7\Module2\WebApp\TouristManagementApp\TouristCore\bin\Debug\netcoreapp3.0\TouristCore.pdb
+D:\C7\Module2\WebApp\TouristManagementApp\TouristCore\obj\Debug\netcoreapp3.0\TouristCore.csprojAssemblyReference.cache
+D:\C7\Module2\WebApp\TouristManagementApp\TouristCore\obj\Debug\netcoreapp3.0\TouristCore.AssemblyInfoInputs.cache
+D:\C7\Module2\WebApp\TouristManagementApp\TouristCore\obj\Debug\netcoreapp3.0\TouristCore.AssemblyInfo.cs
+D:\C7\Module2\WebApp\TouristManagementApp\TouristCore\obj\Debug\netcoreapp3.0\TouristCore.dll
+D:\C7\Module2\WebApp\TouristManagementApp\TouristCore\obj\Debug\netcoreapp3.0\TouristCore.pdb

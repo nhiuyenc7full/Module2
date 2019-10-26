@@ -1,0 +1,47 @@
+﻿@page 
+@model StudentMainApp.Pages.Students.ListModel
+@{
+    ViewData["Title"] = "List";
+}
+
+<br />
+    <h1 class="text-center">Student Management</h1>
+    <form method="get">
+        <div class="input-group">
+            <input type="search" asp-for="SearchKeyWord" />
+            <span>
+                <button><i class="fa fa-car" style="font-size: 24px"></i></button>
+            </span>
+        </div>
+    </form>
+    <a asp-page="./Create" asp-route-studentId="StudentId">Create new student</a>
+<br />
+
+    <form method="post">
+        <table class="table table-striped table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Sport</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var student in Model.Students)
+                {
+                    <tr>
+                        <td>@student.Name</td>
+                        <td>@student.Address</td>
+                        <td>@student.Sport</td>
+                        <td>
+                            <a asp-page="./Detail" asp-route-studentId="@student.Id">Detail</a>
+                            <a asp-page="./Edit" asp-route-studentId="@student.Id">Edit</a>
+                            <button asp-page-handler="Delete" asp-route-studentId="@student.Id">Delete</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </form>
+

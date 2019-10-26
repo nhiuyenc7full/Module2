@@ -26,6 +26,7 @@ namespace ExerciseArray
             Country[] countriesA = reader.ReadAddToArray(nCountry);
             List<Country> countriesL = reader.ReadAddToList(nCountry);
             Dictionary<Country, int> countriesD = reader.ReadAddToDictionary(nCountry);
+            Dictionary<string, List<Country>> countryContinent = reader.ReadAddToDictionary2(nCountry);
 
             switch (choose)
             {
@@ -95,6 +96,7 @@ namespace ExerciseArray
                             }
                         }
                     }
+
                     Console.WriteLine("Type what you want to insert: ");
                     Console.Write("Country: ");
                     country = Console.ReadLine();
@@ -106,7 +108,27 @@ namespace ExerciseArray
                     population = Convert.ToInt32(Console.ReadLine());
                     Country newCountry = new Country(country, code, region, population);
                     break;
+                case 4:
+                    Console.WriteLine("Want to display country of continent ?");
+                    string inputKey = Console.ReadLine();
+                    if(countryContinent.ContainsKey(inputKey.ToLower()))
+                    {
+                        foreach (var item in countryContinent[inputKey])
+                        {
+                            Console.WriteLine($"{item.Population} : {item.Name}");
+                        }
+                        Console.WriteLine("--------------------");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Not found this continent...");
+                    }
+                    break;
             }
+
+
+
+
         }
         public static void DisplayMenu()
         {
@@ -116,15 +138,16 @@ namespace ExerciseArray
             Console.WriteLine("\t\t\t*     1. Read add to Array          *");
             Console.WriteLine("\t\t\t*     2. Read add to List           *");
             Console.WriteLine("\t\t\t*     3. Read add to Dictionary     *");
-            Console.WriteLine("\t\t\t*     4. Exit                       *");
+            Console.WriteLine("\t\t\t*     4. Read add to Dictionary2    *");
+            Console.WriteLine("\t\t\t*     5. Exit                       *");
             Console.WriteLine("\t\t\t************************************* \n");
 
-            Console.WriteLine("\t\tWhat do you want? Choose 1, 2, 3 or 4");
+            Console.WriteLine("\t\tWhat do you want? Choose 1, 2, 3, 4 or 5");
             string str = Console.ReadLine();
             int choose;
-            while (!int.TryParse(str, out choose) || choose < 0 || choose > 5)
+            while (!int.TryParse(str, out choose) || choose < 0 || choose > 6)
             {
-                Console.Write("Enter again! Choose from 1 to 4! \t");
+                Console.Write("Enter again! Choose from 1 to 5! \t");
                 str = Console.ReadLine();
             }
             ChooseMenu(choose);
@@ -145,6 +168,9 @@ namespace ExerciseArray
                     DisplayCountry(choose);
                     break;
                 case 4:
+                    DisplayCountry(choose);
+                    break;
+                case 5:
                     Console.WriteLine("Exit the program.");
                     Environment.Exit(Environment.ExitCode);
                     break;
@@ -268,6 +294,33 @@ namespace ExerciseArray
                 }
             }
             return countries;
+        }
+
+        public Dictionary<string, List<Country>> ReadAddToDictionary2(int nCountry)
+        {
+            Dictionary<string, List<Country>> countryContinent = new Dictionary<string, List<Country>>();
+            using (StreamReader sr = new StreamReader(csvFilePath))
+            {
+                sr.ReadLine();
+                string str = String.Empty;
+                for (int i = 0; i < nCountry; i++)
+                {
+                    str = sr.ReadLine();
+                    Country country = ConvertElement(str);
+                    string region = country.Region;
+                    if (countryContinent.ContainsKey(region))
+                    {
+                        countryContinent[region].Add(country);
+                    }
+                    else
+                    {
+                        List<Country> newCountry = new List<Country>();
+                        newCountry.Add(country);
+                        countryContinent.Add(region, newCountry);
+                    }
+                }
+            }
+            return countryContinent;
         }
     }
 }

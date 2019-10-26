@@ -1,0 +1,8 @@
+D:\C7\Module2\WebApp\OnePieceWeb\OnePiece.Domain\bin\Debug\netcoreapp3.0\OnePiece.Domain.deps.json
+D:\C7\Module2\WebApp\OnePieceWeb\OnePiece.Domain\bin\Debug\netcoreapp3.0\OnePiece.Domain.dll
+D:\C7\Module2\WebApp\OnePieceWeb\OnePiece.Domain\bin\Debug\netcoreapp3.0\OnePiece.Domain.pdb
+D:\C7\Module2\WebApp\OnePieceWeb\OnePiece.Domain\obj\Debug\netcoreapp3.0\OnePiece.Domain.csprojAssemblyReference.cache
+D:\C7\Module2\WebApp\OnePieceWeb\OnePiece.Domain\obj\Debug\netcoreapp3.0\OnePiece.Domain.AssemblyInfoInputs.cache
+D:\C7\Module2\WebApp\OnePieceWeb\OnePiece.Domain\obj\Debug\netcoreapp3.0\OnePiece.Domain.AssemblyInfo.cs
+D:\C7\Module2\WebApp\OnePieceWeb\OnePiece.Domain\obj\Debug\netcoreapp3.0\OnePiece.Domain.dll
+D:\C7\Module2\WebApp\OnePieceWeb\OnePiece.Domain\obj\Debug\netcoreapp3.0\OnePiece.Domain.pdb

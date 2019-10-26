@@ -8,7 +8,7 @@ namespace Practice7_1
         public static Dictionary<int, User> userList = new Dictionary<int, User>();
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello teacher!");
             DisplayMenu();
         }
         public static void DisplayMenu()

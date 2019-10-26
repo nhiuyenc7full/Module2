@@ -6,13 +6,13 @@ using Library;
 public class Program
 {
     static List<Student> studentList = new List<Student>();
+    static StudentRepository studentRepo = new StudentRepository();
     static BookRepository bookRepo = new BookRepository();
     static void Main(string[] args)
     {
         bookRepo.EnterBookLibrary();
         DisplayMenu();
 
-        //student.ShowInfo();
     }
     public static void DisplayMenu()
     {
@@ -51,6 +51,50 @@ public class Program
 
                 break;
             case 2:
+                Console.WriteLine("Enter ID of student you want to edit: ");
+                string str = Console.ReadLine();
+                int id;
+                while(!int.TryParse(str, out id) || id < 1)
+                {
+                    Console.Write("Enter again! ");
+                    str = Console.ReadLine();
+                }
+                Console.WriteLine("What do you want to edit?");
+                Console.WriteLine("1. Name\n2. Age\n3. Gender\n4. City");
+                str = Console.ReadLine();
+                int number;
+                while (!int.TryParse(str, out number) || number < 0 || number > 4)
+                {
+                    Console.WriteLine("Enter again! Choose 1, 2, 3 or 4! ");
+                    str = Console.ReadLine();
+                }
+
+                foreach (var item in studentList)
+                {
+                    if (item.StudentID == id)
+                    {
+                        switch (choose)
+                        {
+                            case 1:
+                                Console.WriteLine("Enter new name: ");
+                                str = Console.ReadLine();
+                                item.StudentName = str;
+                                break;
+                            case 2:
+                                Console.WriteLine("Enter new age: ");
+                                item.Age = studentRepo.EnterAge();
+                                break;
+                            case 3:
+                                Console.WriteLine("Enter new gender: ");
+                                item.Gender = studentRepo.EnterGender();
+                                break;
+                            case 4:
+                                Console.WriteLine("Enter new city: ");
+                                item.City = studentRepo.EnterCity();
+                                break;
+                        }
+                    }
+                }
 
                 break;
             case 3:
@@ -70,12 +114,6 @@ public class Program
                 }
                 break;
             case 4:
-
-                break;
-            case 5:
-
-                break;
-            case 6:
                 Console.WriteLine("Exit the program.");
                 Environment.Exit(Environment.ExitCode);
                 break;

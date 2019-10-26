@@ -1,0 +1,8 @@
+D:\C7\Module2\WebApp\CompanyC7\Company.Core\bin\Debug\netcoreapp3.0\CompanyC7.Core.deps.json
+D:\C7\Module2\WebApp\CompanyC7\Company.Core\bin\Debug\netcoreapp3.0\CompanyC7.Core.dll
+D:\C7\Module2\WebApp\CompanyC7\Company.Core\bin\Debug\netcoreapp3.0\CompanyC7.Core.pdb
+D:\C7\Module2\WebApp\CompanyC7\Company.Core\obj\Debug\netcoreapp3.0\CompanyC7.Core.AssemblyInfoInputs.cache
+D:\C7\Module2\WebApp\CompanyC7\Company.Core\obj\Debug\netcoreapp3.0\CompanyC7.Core.AssemblyInfo.cs
+D:\C7\Module2\WebApp\CompanyC7\Company.Core\obj\Debug\netcoreapp3.0\CompanyC7.Core.dll
+D:\C7\Module2\WebApp\CompanyC7\Company.Core\obj\Debug\netcoreapp3.0\CompanyC7.Core.pdb
+D:\C7\Module2\WebApp\CompanyC7\Company.Core\obj\Debug\netcoreapp3.0\CompanyC7.Core.csprojAssemblyReference.cache

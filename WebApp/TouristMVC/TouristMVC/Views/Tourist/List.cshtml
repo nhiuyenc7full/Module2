@@ -1,0 +1,19 @@
+﻿@model TouristListViewModel
+
+@{
+    ViewData["Title"] = "List";
+
+}
+
+<section class="py-5">
+    <div class="container">
+        <h2 class="mb-5 text-center">@Model.CurrentCountry</h2>
+        <div class="card-deck">
+            @foreach (var tourist in Model.Tourists)
+            {
+                <partial name="_TouristCard" model="tourist" />
+            }
+        </div>
+        <a class="btn btn-primary" asp-controller="Tourist" asp-action="Create">Add Tourist</a>
+    </div>
+</section>

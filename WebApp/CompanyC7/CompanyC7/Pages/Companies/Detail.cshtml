@@ -1,0 +1,18 @@
+﻿@page
+@model CompanyC7.Pages.Companies.DetailModel
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Detail</h1>
+<h2 class="badge-info">@Model.Company.Name</h2>
+<div>
+    Id: @Model.Company.Id
+</div>
+<div>
+    Location: @Model.Company.Location
+</div>
+<div>
+    Company type: @Model.Company.CompanyType
+</div>
+<a asp-page="./Listt">Back to list</a>

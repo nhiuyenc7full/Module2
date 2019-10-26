@@ -1,0 +1,60 @@
+﻿@page
+@model CompanyC7.Pages.Companies.ListtModel
+@{
+    ViewData["Title"] = "Listt";
+}
+
+<form method="get">
+    @*nếu có action="/" thì không thực hiện được chức năng Search. Vì form gửi thông tin và reset lại thông tin*@
+    <div class="input-group">
+        <input type="search" asp-for="SearchKeyWord"/>
+        <span>
+            <button class="btn btn-group-lg btn-dark" style="width:100%">
+                <span>
+                    <i class="fas fa-heart" style="font-size:24px">Nhụy Khùng</i>
+                </span>
+            </button>
+        </span>
+    </div>
+</form>
+
+
+@if (Model.Companies.ToArray().Length == 0)
+{
+    <a asp-page="./NotFound">Not found</a>
+}
+else
+{
+    <table class=" table table-dark table-hover table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Name Companny</th>
+                <th>Location Companny</th>
+                <th>Company Type</th>
+                <th>Detail</th>
+            </tr>
+        </thead>
+        @foreach (var company in Model.Companies)
+        {
+            <tr>
+                <td>@company.Name</td>
+                <td>@company.Location</td>
+                <td>@company.CompanyType</td>
+                <td class="btn" style="width: 100%">
+                    <a class="btn btn-light" asp-page="./Detail" asp-route-companyId="@company.Id">Detail</a>
+                    <a class="btn btn-light" asp-page="./Edit" asp-route-companyId="@company.Id">Edit</a>
+                    <a class="btn btn-light" asp-page="./Delete" asp-route-companyId="@company.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+}
+
+
+
+<div>@Model.Message</div>
+
+@section Footer {
+    <p>Nhị Uyên professtional</p>
+}
+

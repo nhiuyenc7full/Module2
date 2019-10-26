@@ -1,0 +1,29 @@
+﻿@page
+@model StudentMainApp.Pages.Students.CreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create a new student</h1>
+<form method="post">
+    <input type="hidden" asp-for="student.Id" />
+
+    <div class="form-group">
+        <label asp-for="student.Name"></label>
+        <input asp-for="student.Name" />
+        <span class="text-danger" asp-validation-for="student.Name"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="student.Address"></label>
+        <input asp-for="student.Address" />
+        <span class="text-danger" asp-validation-for="student.Address"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="student.Sport"></label>
+        <select asp-for="student.Sport" asp-items="Model.Sports">
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>

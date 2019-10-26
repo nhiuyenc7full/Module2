@@ -1,0 +1,8 @@
+D:\C7\Module2\WebApp\StudentMainApp\StudentCore\bin\Debug\netcoreapp2.2\StudentCore.deps.json
+D:\C7\Module2\WebApp\StudentMainApp\StudentCore\bin\Debug\netcoreapp2.2\StudentCore.dll
+D:\C7\Module2\WebApp\StudentMainApp\StudentCore\bin\Debug\netcoreapp2.2\StudentCore.pdb
+D:\C7\Module2\WebApp\StudentMainApp\StudentCore\obj\Debug\netcoreapp2.2\StudentCore.csprojAssemblyReference.cache
+D:\C7\Module2\WebApp\StudentMainApp\StudentCore\obj\Debug\netcoreapp2.2\StudentCore.AssemblyInfoInputs.cache
+D:\C7\Module2\WebApp\StudentMainApp\StudentCore\obj\Debug\netcoreapp2.2\StudentCore.AssemblyInfo.cs
+D:\C7\Module2\WebApp\StudentMainApp\StudentCore\obj\Debug\netcoreapp2.2\StudentCore.dll
+D:\C7\Module2\WebApp\StudentMainApp\StudentCore\obj\Debug\netcoreapp2.2\StudentCore.pdb

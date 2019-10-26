@@ -1,0 +1,14 @@
+﻿@page "{studentId:int}"
+@model StudentMainApp.Pages.Students.DetailModel
+@{
+    ViewData["Title"] = "Detail";
+}
+    <div class="vw-100">
+        <h1>Detail</h1>
+        <h2>Name: @Model.student.Name</h2>
+        <h2>Id: @Model.student.Id</h2>
+        <h2>Address: @Model.student.Address</h2>
+        <h2>Sport: @Model.student.Sport</h2>
+    </div>
+
+<a asp-page="./List">Back To List</a>

@@ -29,22 +29,20 @@ namespace ExerciseFileIO
             string str = Console.ReadLine();
 
             //điền hàng
-            while (!int.TryParse(str, out length) || length < 0 || length > 100)
+            while (!int.TryParse(str, out row) || row < 0 || row > 100)
             {
                 Console.WriteLine("Enter again!");
                 str = Console.ReadLine();
             }
-            row = length;
             //điền cột 
             Console.Write("Enter the Column of Array: ");
             str = Console.ReadLine();
 
-            while (!int.TryParse(str, out length) || length < 0 || length > 100)
+            while (!int.TryParse(str, out column) || column < 0 || column > 100)
             {
                 Console.WriteLine("Enter again!");
                 str = Console.ReadLine();
             }
-            column = length;
 
             Random num = new Random();
             using (swW = new StreamWriter(path))
@@ -66,7 +64,7 @@ namespace ExerciseFileIO
             if ("Y".Equals(str))
             {
                 string[] lines = File.ReadAllLines(path);
-                Console.WriteLine("Number of lines: {0}", lines.Length);
+                //Console.WriteLine("Number of lines: {0}", lines.Length);
                 for (int i = 1; i < lines.Length; i++)
                 {
                     Console.WriteLine(lines[i]);
@@ -80,7 +78,7 @@ namespace ExerciseFileIO
         
             CreateArray();
             //Console.WriteLine(arr.Length);
-            //DisplayMenu();
+            DisplayMenu();
         }
 
         static void DisplayMenu()

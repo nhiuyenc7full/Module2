@@ -1,0 +1,20 @@
+﻿@model DistrictListViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="mb-5 text-center">@Model.CurrentProvince</h2>
+            <h2 class="mb-5 text-md-right">@Model.Districts.ToList().Count districts</h2>
+            <div class="card-deck">
+                @foreach (var district in Model.Districts)
+                {
+                    <partial name="_DistrictCard" model="district" />
+                }
+            </div>
+            <br />
+            <a class="btn btn-primary" asp-controller="Districts" asp-action="Create">Add District</a>
+        </div>
+    </section>
